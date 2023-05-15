@@ -13,13 +13,15 @@ To run the script, simply execute the following command from the terminal:
 python3 ./password_cracker.py
 The script will try each password in the wordlist until the correct one is found, and print the key to the console. If no correct password is found, the script will print "Finished Wordlist".
 
+![image](https://github.com/PatrickAcheson/private-RSA-key-bruteforce/assets/90014630/68caa96e-d391-409c-90df-c2d3451eed93)
+
 <b>Customization</b>
 
 You can customize the script by changing the following variables:
 
 wordlist_file: the path to the wordlist file to be used for password cracking. By default, it is set to rockyou.txt.
 private_key_file: the path to the private key file that you want to crack. By default, it is set to private.pem.
-pass_prefix: the prefix for the openssl command to decrypt the private key. By default, it is set to "openssl rsa -in private.pem -out out.key -passin pass:".
+pass_prefix: the prefix for the openssl command to decrypt the private key. By default, it is set to "openssl rsa -in {file} -out out.key -passin pass:".
 
 <b>License</b>
 
